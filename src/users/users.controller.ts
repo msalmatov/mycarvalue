@@ -33,7 +33,7 @@ export class UsersController {
   // }
 
   @Get('whoami')
-  whoAmI(@CurrentUser() user: string) {
+  whoAmI(@CurrentUser() user: User) {
     return user;
   }
 
